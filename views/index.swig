@@ -1,4 +1,5 @@
 {% extends 'layout.swig' %}
+{% set title = 'Headlines' %}
 
 {% block content %}
     <div class="reveal">
@@ -10,6 +11,11 @@
                 </section>
                 <section>
                     <h1>Focus Screen 2</h1>
+                    <p class="lead">Lead text</p>
+                </section>
+                <section>
+                    <h1>Focus Screen 3</h1>
+                    <p class="lead">Lead text</p>
                 </section>
             </div>
         </div>
@@ -43,7 +49,7 @@
             slideNumber: false,
             history: true,
             keyboard: true,
-            center: false,
+            center: true,
             width: '100%',
             height: '100%',
             touch: true,
@@ -61,6 +67,6 @@
             speed: 600,
             direction: 'up',
             autostart: 1
-        })
+        });
     </script>
 {% endblock %}

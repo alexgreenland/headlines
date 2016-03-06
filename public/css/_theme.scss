@@ -2,8 +2,29 @@ body {
     padding-bottom: $body-bottom-padding;
 }
 
+nav.navbar-light {
+    color: $navbar-light-color;
+}
+
+.reveal {
+    color: $body-color;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    color: $body-color;
+}
+
 .reveal .slides {
     text-align: left;
+}
+
+.reveal .slides section {
+    transition: all ease 0.5s;
 }
 
 .reveal canvas.playback {
