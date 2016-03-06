@@ -1,0 +1,17 @@
+body {
+    padding-bottom: $body-bottom-padding;
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal canvas.playback {
+    bottom: $body-bottom-padding;
+}
+
+ul.ticker-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
