@@ -9,6 +9,6 @@
   "dependencies": {
     "reveal.js": "^3.2.0",
     "bootstrap": "v4.0.0-alpha.2",
-    "jquery-advanced-news-ticker": "risq/jquery-advanced-news-ticker#^1.0.1"
+    "slick-carousel": "^1.5.9"
   }
 }

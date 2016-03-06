@@ -27,11 +27,9 @@
                     Top Story
                 </div>
                 <div class="ticker lead">
-                    <ul class="ticker-list">
-                        <li>Highlight 1</li>
-                        <li>Highlight 2</li>
-                        <li>Highlight 3</li>
-                    </ul>
+                    <div>Highlight 1</div>
+                    <div>Highlight 2</div>
+                    <div>Highlight 3</div>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -41,7 +39,7 @@
     </nav>
     <script src="components/jquery/dist/jquery.js"></script>
     <script src="components/reveal.js/js/reveal.js"></script>
-    <script src="components/jquery-advanced-news-ticker/js/newsTicker.js"></script>
+    <script src="components/slick-carousel/slick/slick.js"></script>
     <script>
         Reveal.initialize({
             controls: false,
@@ -61,12 +59,13 @@
             backgroundTransition: 'default'
         });
         
-        $('.ticker-list').newsTicker({
-            row_height: 30,
-            max_rows: 1,
-            speed: 600,
-            direction: 'up',
-            autostart: 1
+        $('.ticker').slick({
+            vertical: true,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            infinite: true,
+            arrows: false,
+            cssEase: 'ease'
         });
     </script>
 {% endblock %}
